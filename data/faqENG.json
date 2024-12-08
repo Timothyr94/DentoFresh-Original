@@ -1,0 +1,29 @@
+{
+  "placeholder_value": "@@@",
+  "questions": [
+    {
+      "question": "How many and which @@@ products can I buy?",
+      "answer": [
+        "The cashback promotion applies to the purchase of one @@@ product from the following variants:",
+        "The promotion applies exclusively to products purchased in Poland."
+      ],
+      "placeholder": ["DentoFresh", "DentoFresh"]
+    },
+    {
+      "question": "What will I get a refund for?",
+      "answer": [
+        "If you have met all the promotion conditions and your participation is valid, you will receive a refund of the full purchase price of the promotional @@@ product (less any discounts) via bank transfer to the specified account."
+      ],
+      "placeholder": ["DentoFresh"]
+    },
+    {
+      "question": "Who can participate in the promotion?",
+      "answer": [
+        "Only adults aged 18 and over residing in Poland can participate in the promotion.",
+        "Employees of @@@, as well as individuals directly involved in its development or implementation, including representatives of advertising agencies, consultants, service providers, and members of their families and households, are excluded from participation.",
+        "Additionally, the purchase of promotional products through online retailers does not qualify for participation in the promotion."
+      ],
+      "placeholder": ["DentoFresh", "DentoFresh", "DentoFresh"]
+    }
+  ]
+}

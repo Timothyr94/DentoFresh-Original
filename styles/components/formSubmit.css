@@ -1,0 +1,43 @@
+.formSubmit {
+  position: relative;
+  z-index: 1;
+  height: 20dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden;s */
+}
+.formSubmit__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #dae6e7; */
+  background-color: var(--clr-btn-background);
+  background-image: url(/Icons/iconThree.svg);
+  background-size: 18.5px 18.5px;
+  background-position: center;
+  background-repeat: repeat;
+  z-index: 0;
+}
+
+.formSubmit__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formSubmit__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-size-xxs);
+}
+.formSubmit__btn__icon {
+  height: 0.85em;
+  width: auto;
+}

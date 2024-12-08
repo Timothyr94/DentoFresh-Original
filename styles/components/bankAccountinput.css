@@ -1,0 +1,19 @@
+.bankAccount__input {
+  background-color: var(--clr-secondary-light);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-size-sm);
+  padding-bottom: var(--spacing-size-lg);
+  position: relative;
+  z-index: 1;
+}
+.bankAccount__input h2 {
+  text-align: center;
+}
+.bankAccount__input__title {
+  font-size: var(--font-size-lg-display);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-primary-weight-700);
+  letter-spacing: -0.125ch;
+}

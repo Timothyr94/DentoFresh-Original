@@ -1,0 +1,45 @@
+.receiptUpload {
+  position: relative;
+  z-index: 1;
+  height: 20dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.receiptUpload__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-btn-background);
+  background-image: url(/Icons/iconTwo.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.receiptUpload__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.receiptUpload__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-size-xxs);
+}
+.receiptUpload__btn__icon {
+  height: 1.1em;
+  width: auto;
+}
+.receiptUpload__help img {
+  height: 5rem;
+  width: auto;
+}

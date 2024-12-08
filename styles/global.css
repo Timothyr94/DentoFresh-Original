@@ -1,0 +1,40 @@
+/* Global Resets */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  line-height: calc(1em + 0.5rem);
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  -webkit-font-smoothing: subpixel-antialiasing;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+button,
+label,
+input {
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}

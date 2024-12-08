@@ -1,0 +1,53 @@
+/* horizontal animated scroll bar */
+.horizontalScroll__container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.horizontalScroll {
+  width: fit-content;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  animation: scrolling ease-in-out;
+  animation-timeline: scroll(root);
+}
+@keyframes scrolling {
+  to {
+    transform: translate(calc(-40%));
+  }
+}
+.scroll1 {
+  color: var(--clr-primary);
+  background-color: var(--clr-secondary-dark);
+}
+.scroll2 {
+  animation-direction: reverse;
+  color: var(--clr-secondary-dark);
+  background-color: var(--clr-primary);
+}
+.horizontalScroll__text1 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-lg-display);
+  font-weight: var(--font-primary-weight-300);
+  letter-spacing: -8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  height: var(--spacing-size-lg);
+}
+.horizontalScroll__text2 {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-lg-display);
+  font-weight: var(--font-primary-weight-800);
+  letter-spacing: -3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  height: var(--spacing-size-lg);
+}

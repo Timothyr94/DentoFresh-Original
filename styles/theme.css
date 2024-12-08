@@ -1,0 +1,11 @@
+/* colors */
+:root {
+  --clr-dark: #020617;
+  --clr-light: white;
+  --clr-background: #dae6e7;
+  --clr-background-seethrough: rgba(218, 230, 231, 0.8);
+  --clr-primary: #95e6d8;
+  --clr-secondary-dark: #259be4;
+  --clr-secondary-light: #50bfe8;
+  --clr-btn-background: #c1d2d7;
+}

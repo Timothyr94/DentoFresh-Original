@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,700&family=Atma:wght@500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/theme.css" />
+    <link rel="stylesheet" href="styles/temporary.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/sizing.css" />
+    <link rel="stylesheet" href="styles/components/hero.css" />
+    <link rel="stylesheet" href="styles/components/actionsteps.css" />
+    <link rel="stylesheet" href="styles/components/horizontalScroll.css" />
+    <link rel="stylesheet" href="styles/components/receiptUpload.css" />
+    <link rel="stylesheet" href="styles/components/receiptInput.css" />
+    <link rel="stylesheet" href="styles/components/customerInput.css" />
+    <link rel="stylesheet" href="styles/components/bankAccountinput.css" />
+    <link rel="stylesheet" href="styles/components/formSubmit.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+    <link rel="stylesheet" href="styles/utils.css" />
+    <link rel="script" href="scripts/hidden.js" />
+    <script src="/scripts/hidden.js" defer></script>
+    <script src="/scripts/wiggle.js" defer></script>
+    <script src="/scripts/swing.js" defer></script>
+    <script src="/scripts/popup.js" defer></script>
+    <script src="/scripts/faq.js" defer></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+     <div class="wrapper__z1">
+      <section class="hero container">
+        <h1 class="hero__title ">DentoFresh</h1>
+        <h2 class="hero__cta atma-semibold">TRY <span class="hero__cta__span" >NOW</span> FOR <span class="hero__cta__span2">FREE!</span></h2>
+        <img
+          class="hero__img drop-shadow"
+          rel="preload"
+          src="/img/DentoFresh.png"
+          alt="hero brand image"
+        />
+      </section>
+      <!-- Actionsteps Section -->
+        <section id="actionsteps" class="actionsteps container">
+        <h2 class="actionsteps__title">BUT..HOW?!</h2>
+        <div class="actionsteps__box actionsteps__box1 glass-light">
+          <img
+            class="actionsteps__box__icon drop-shadow"
+            rel="preload"
+            src= "/Icons/iconOne.svg"
+            alt="icon shopping-cart"
+          />
+          <img
+            class="actionsteps__box__icon__num glass-strong drop-shadow"
+            rel="preload"
+            src="/Icons/numberOne.svg"
+            alt="number 1 in a cirlce"
+          />
+        </div>
+        <p class="actionsteps__description hidden-left">buy article</p>
+        <div class="actionsteps__box glass-light">
+          <img
+            class="actionsteps__box__icon drop-shadow"
+            rel="preload"
+            src="/Icons/iconTwo.svg"
+            alt="icon receipt"
+          />
+          <img
+            class="actionsteps__box__icon__num actionsteps__box__icon__num2 drop-shadow"
+            rel="preload"
+            src="/Icons/numberTwo.svg"
+            alt="number 1 in a cirlce"
+          />
+            <img class="actionsteps__box__icon__question" src="/Icons/iconUploadTwo.svg" alt="question mark icon">
+            <button id="qustion__popup" class="actionsteps__box__icon__question__btn-invisible" type="button" aria-label="Help"></button>
+          </div>
+          <p class="actionsteps__description hidden-right">
+            upload receipt
+          </p>
+          
+          <div class="actionsteps__box glass-light">
+            <img
+            class="actionsteps__box__icon drop-shadow"
+            rel="preload"
+            src="/Icons/iconThree.svg"
+            alt="icon money"
+            />
+            <img
+            class="actionsteps__box__icon__num drop-shadow"
+            rel="preload"
+            src="/Icons/numberThree.svg"
+            alt="number 1 in a cirlce"
+            />
+          </div>
+          <p class="actionsteps__description hidden-left">
+            receive cashback
+          </p>
+          <div id="popup" class="popup">
+            <span id="close-popup" class="close">&times;</span>
+            <img rel="preload" src="/img/Receipt_Circles_BlueAsset.svg" alt="example shopping receipt" class="popup__img">
+          </div>
+        </section>
+      <div class="horizontalScroll__container">
+        <div class="horizontalScroll scroll1">
+          <span class="horizontalScroll__text1">
+            DENTOFRESH
+          </span>
+          <span class="horizontalScroll__text2">
+            CASHBACK
+          </span>
+          <span class="horizontalScroll__text1">
+            DENTOFRESH
+          </span>
+          <span class="horizontalScroll__text2">
+            CASHBACK
+          <span class="horizontalScroll__text1">
+            DENTOFRESH
+          </span>
+          <span class="horizontalScroll__text2">
+            CASHBACK
+          <span class="horizontalScroll__text1">
+            DENTOFRESH
+          </span>
+          <span class="horizontalScroll__text2">
+            CASHBACK
+          </span>
+        </div>
+        </div>
+    <!-- Img Upload Section -->
+    <section class="receiptUpload container ">
+      <div class="receiptUpload__background"></div> 
+      <div class="receiptUpload__content">
+        <label
+              for="img-file-upload"
+              class="primary-btn receiptUpload__btn" 
+              >
+            <img rel="preload" class="receiptUpload__btn__icon" src="/Icons/iconUploadOne.svg" alt="arrow pointing up out of cloud">
+              UPLOAD
+            </label>
+            <input
+              id="img-file-upload"
+              type="file"
+              accept="image/*"
+              style="display: none"
+            />
+          </div>
+    </section>
+
+  <div class="horizontalScroll__container">
+    <div class="horizontalScroll scroll2">
+    <span class="horizontalScroll__text1">
+      DENTOFRESH
+    </span>
+    <span class="horizontalScroll__text2">
+      CASHBACK
+    </span>
+    <span class="horizontalScroll__text1">
+      DENTOFRESH
+    </span>
+    <span class="horizontalScroll__text2">
+      CASHBACK
+    </span>
+    <span class="horizontalScroll__text1">
+      DENTOFRESH
+    </span>
+    <span class="horizontalScroll__text2">
+      CASHBACK
+    </span>
+    <span class="horizontalScroll__text1">
+      DENTOFRESH
+    </span>
+    <span class="horizontalScroll__text2">
+      CASHBACK
+    </span>
+  </div>
+</div>
+    <!-- receipt input section -->
+    <section class="receiptInput container">
+<h2 class="receiptInput__title">Receipt</h2>
+<input required id="receipt__date__input" type="date" min="1900-01-01" max="2100-01-01" class="receiptInput__date secondary-btn"> 
+<input required id="receipt__time__input" type="time" class="receiptInput__time secondary-btn">
+<input id="receipt__sum__input" type="number" class="receiptInput__sum secondary-btn" placeholder="purchase amount">
+<input id="receipt__zip__input" type="number" class="receiptInput__zip secondary-btn" placeholder="zip code shop">
+    </section>
+    <!-- customer input section -->
+<section class="customerInput container">
+<h2 class="customerInput__title">Customer</h2>
+<input type="checkbox" id="toggle" class="toggleCheckbox">
+<label for="toggle" class="toggleContainer">
+  <div>male</div>
+  <div>female</div>
+</label>
+<!-- <select required  class="customer__gender__select secondary-btn" id="gender" name="gender">
+  <option value="" disabled selected>gender selection</option>
+  <option value="none">prefer not to say</option>
+  <option value="female">female</option>
+  <option value="male">male</option>
+  <option value="non-binary">non binary</option>
+</select> -->
+<input id="customer__firstName__input" type="text" placeholder="first name" class="UserInput__firstName secondary-btn">
+<input id="customer__lastName__input" type="text" placeholder="last name" class="UserInput__lastName secondary-btn">
+ <div style="display: flex; gap:0.35rem; max-width:90%;">
+<input id="customer__street__input" type="text" placeholder="street" class="UserInput__street secondary-btn" style="flex: 2.95;">
+<input id="customer__streetNumber__input" type="number" placeholder="#" class="UserInput__street secondary-btn" style="flex: 1.05;">
+ </div>
+
+<input id="customer__zip__input" type="text" placeholder="zip code" class="UserInput__zip secondary-btn">
+
+<input id="customer__city__input" type="text" placeholder="city" class="UserInput__city secondary-btn">
+
+<input id="customer__email__input" type="email" placeholder="email" class="UserInput__email secondary-btn">
+    </section>
+    <!-- bank account input -->
+    <section class="bankAccount__input container">
+      <h2 class="bankAccount__input__title">Bank</h2>
+
+<input id="user__bankAccount__input" placeholder="account name" type="text" class="UserInput__bankAccount secondary-btn">
+
+  <input id="user__IBAN__input" type="text" placeholder="IBAN" class="UserInput__IBAN secondary-btn">  
+</section>
+</div>
+<section class="formSubmit container">
+<div class="formSubmit__background"></div> 
+      <div class="formSubmit__content">
+        <label
+              for="img-file-upload"
+              class="primary-btn formSubmit__btn" 
+              >
+            <img rel="preload" class="formSubmit__btn__icon" src="/Icons/iconSendOne.svg" alt="checkbox icon">
+              SUBMIT
+            </label>
+            <input
+              id="img-file-upload"
+              type="file"
+              accept="image/*"
+              style="display: none"
+            />
+          </div>
+        </div>
+      </section>
+  <!-- footer section -->
+   <footer class="footer__questions container">
+    <h2 class="footer__title">A     <em class="title-clr">PLACE</em><br>FOR YOUR<br> <em class="title-background-clr">QUESTIONS</em></h2>
+    <div id="footer__faq" class="footer__faq"></div> 
+  </footer>
+  </body>
+</html>

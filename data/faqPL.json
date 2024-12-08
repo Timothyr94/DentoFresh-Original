@@ -1,0 +1,29 @@
+{
+  "placeholder_value": "@@@",
+  "questions": [
+    {
+      "question": "Ile i jakie produkty @@@ mogę kupić?",
+      "answer": [
+        "Promocja cashback dotyczy zakupu jednego produktu @@@ z poniższych wariantów:",
+        "Promocja dotyczy wyłącznie produktów zakupionych na terenie Polski."
+      ],
+      "placeholder": ["DentoFresh", "DentoFresh"]
+    },
+    {
+      "question": "Za co otrzymam zwrot pieniędzy?",
+      "answer": [
+        "Jeśli spełniłeś wszystkie warunki promocji i Twój udział jest ważny, otrzymasz zwrot całej ceny zakupu produktu promocyjnego @@@ (pomniejszonej o wszelkie rabaty) przelewem bankowym na wskazane konto."
+      ],
+      "placeholder": ["DentoFresh"]
+    },
+    {
+      "question": "Kto może wziąć udział w promocji?",
+      "answer": [
+        "W promocji mogą brać udział wyłącznie osoby pełnoletnie, które ukończyły 18 lat i mieszkają na terenie Polski.",
+        "Z uczestnictwa w promocji wyłączeni są pracownicy @@@, a także osoby bezpośrednio zaangażowane w jej opracowanie lub realizację, w tym przedstawiciele agencji reklamowych, konsultanci, dostawcy usług oraz członkowie ich rodzin i wspólnych gospodarstw domowych.",
+        "Ponadto, zakup produktów promocyjnych za pośrednictwem sprzedawców internetowych nie uprawnia do wzięcia udziału w promocji."
+      ],
+      "placeholder": ["DentoFresh", "DentoFresh", "DentoFresh"]
+    }
+  ]
+}

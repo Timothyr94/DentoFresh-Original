@@ -1,0 +1,46 @@
+.receiptInput {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-size-sm);
+  align-items: center;
+  background: linear-gradient(#259be4, #50bfe8);
+  padding-top: var(--spacing-size-md);
+  padding-bottom: var(--spacing-size-md);
+  position: relative;
+  z-index: 1;
+}
+.receiptInput__date {
+  appearance: none;
+}
+.receiptInput__title {
+  font-size: var(--font-size-lg-display);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-primary-weight-700);
+  letter-spacing: -0.125ch;
+  padding-top: var(--spacing-size-sm);
+}
+input[type="date"]:invalid::-webkit-datetime-edit {
+  color: var(--clr-placeholder);
+  font-size: var(--font-size-sm-subheading);
+  text-align: start;
+}
+input[type="time"]:invalid::-webkit-datetime-edit {
+  color: var(--clr-placeholder);
+  font-size: var(--font-size-sm-subheading);
+  text-align: start;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+input::placeholder {
+  font-size: var(--font-size-sm-subheading);
+  color: var(--clr-placeholder);
+  text-align: start;
+}

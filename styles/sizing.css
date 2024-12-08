@@ -1,0 +1,23 @@
+:root {
+  /* spacing sizes */
+
+  /* most related */
+  --spacing-size-xxs: 0.25rem;
+  /* closely related */
+  --spacing-size-xs: 0.5rem;
+  /* semi related */
+  --spacing-size-sm: 1rem;
+  /* less related */
+  --spacing-size-md: 2rem;
+  --spacing-size-lg: 4rem;
+  --spacing-size-xl: 8rem;
+  --spacing-size-xxl: 16rem;
+
+  --container-width-sm: 3.5rem;
+  --container-width-md: 4rem;
+  --container-width-lg: 4.5rem;
+
+  --container-spacing-sm: 1.5rem;
+  --container-spacing-md: 2rem;
+  --container-spacing-lg: 2.5rem;
+}

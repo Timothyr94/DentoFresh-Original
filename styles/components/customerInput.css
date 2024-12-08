@@ -1,0 +1,107 @@
+.customerInput {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--spacing-size-sm);
+  background-color: #50bfe8;
+  position: relative;
+  z-index: 1;
+  padding-bottom: var(--spacing-size-md);
+}
+.customerInput__title {
+  font-size: var(--font-size-lg-display);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-primary-weight-700);
+  letter-spacing: -0.125ch;
+}
+.toggleCheckbox {
+  display: none;
+}
+.toggleContainer {
+  position: relative;
+  display: grid;
+  z-index: 1;
+  grid-template-columns: repeat(2, 1fr);
+  height: 3rem;
+  padding: 0 0.5em;
+  border-radius: 25px;
+  max-width: 90dvw;
+  width: 90%;
+  font-size: var(--font-size-md-subheading);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-primary-weight-400);
+  background-color: var(--clr-background);
+  cursor: pointer;
+}
+.toggleContainer::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  border-radius: 25px;
+  background: var(--clr-light);
+  transition: all 0.3s;
+}
+.toggleContainer div {
+  padding: 6px;
+  text-align: center;
+  z-index: 2;
+}
+.toggleCheckbox:checked + .toggleContainer::before {
+  width: 50%;
+  left: 50%;
+}
+.toggleCheckbox:checked + .toggleContainer div:first-child {
+  color: rgba(2, 6, 23, 0.5);
+  font-weight: var(--font-primary-weight-200);
+  transition: color 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer div:last-child {
+  color: var(--clr-dark);
+  font-weight: var(--font-primary-weight-400);
+
+  transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:first-child {
+  color: var(--clr-dark);
+
+  font-weight: var(--font-primary-weight-400);
+
+  transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:last-child {
+  color: rgba(2, 6, 23, 0.5);
+  font-weight: var(--font-primary-weight-200);
+  transition: color 0.3s;
+}
+/* select:has(option[value=""]:checked),
+option[value="male"] {
+  color: var(--clr-dark);
+  text-align: start;
+  font-size: var(--font-size-sm-subheading);
+}
+select:has(option[value="male"]:checked),
+option[value="male"] {
+  color: var(--clr-dark);
+  text-align: center;
+  font-size: var(--font-size-md-subheading);
+}
+select:has(option[value="male"]:checked),
+option[value="prefer not to say"] {
+  color: var(--clr-dark);
+  text-align: center;
+  font-size: var(--font-size-md-subheading);
+}
+select:has(option[value="male"]:checked),
+option[value="female"] {
+  color: var(--clr-dark);
+  text-align: center;
+  font-size: var(--font-size-md-subheading);
+}
+select:has(option[value="male"]:checked),
+option[value="non-binary"] {
+  color: var(--clr-dark);
+  text-align: center;
+  font-size: var(--font-size-md-subheading);
+} */
